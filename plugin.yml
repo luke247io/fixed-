@@ -1,0 +1,30 @@
+name: NoxariaCore
+version: 1.0
+main: net.noxaria.core.Noxaria
+api-version: '26.3'
+commands:
+  noxaria:
+    description: Noxaria Panel (nur Owner)
+  warn:
+    description: Spieler verwarnen
+    usage: /warn <spieler> [grund]
+  market:
+    description: Auktionshaus
+    aliases: [ah]
+  sell:
+    description: Items verkaufen
+  money:
+    description: Kontostand
+    aliases: [balance, bal]
+  pay:
+    description: Geld senden
+    usage: /pay <spieler> <betrag>
+  spawnstash:
+    description: Koeder-Versteck erzeugen
+permissions:
+  noxaria.staff:
+    default: false
+  noxaria.warn:
+    default: false
+  noxaria.stash:
+    default: false

@@ -1,0 +1,88 @@
+# ===== Noxaria Core =====
+# Owner: beim ersten Beitritt mit diesem Namen wird die UUID gespeichert.
+# Danach zaehlt nur noch die UUID (Namensaenderungen sind egal).
+owner-name: SolvedHawk87657
+owner-uuid: ""
+maintenance: false
+
+# Gruende fuer Verwarnungen: Anzeigename|MATERIAL (max. 7)
+warn-reasons:
+  - "Cheaten|DIAMOND_SWORD"
+  - "Beleidigung|PAPER"
+  - "Rassismus|SKELETON_SKULL"
+  - "Glitchen|REDSTONE"
+  - "Spam|BOOK"
+  - "Griefing|TNT"
+
+# Raenge. weight = Sortierung in der Tabliste (hoeher = weiter oben).
+# permissions = Rechte OHNE OP (z. B. minecraft.command.kick).
+groups:
+  owner:
+    prefix: "&4&lOWNER &r"
+    weight: 100
+    permissions: [noxaria.staff, noxaria.warn, noxaria.stash]
+  admin:
+    prefix: "&c&lADMIN &r"
+    weight: 90
+    permissions: [noxaria.staff, noxaria.warn, noxaria.stash, minecraft.command.kick, minecraft.command.ban, minecraft.command.pardon, minecraft.command.tp, minecraft.command.teleport, minecraft.command.gamemode]
+  streamer:
+    prefix: "&5&lSTREAMER &r"
+    weight: 70
+    permissions: [minecraft.command.me]
+  creator:
+    prefix: "&d&lCREATOR &r"
+    weight: 60
+    permissions: [minecraft.command.me]
+  premium:
+    prefix: "&6&lPREMIUM &r"
+    weight: 50
+    permissions: []
+  vip:
+    prefix: "&a&lVIP &r"
+    weight: 40
+    permissions: []
+  spieler:
+    prefix: "&7"
+    weight: 0
+    permissions: []
+
+economy:
+  start-balance: 500
+market:
+  tax: 0.05
+  max-listings: 10
+
+# Verkaufspreise pro Stueck (nur Items ohne Namen/Verzauberung)
+sell-prices:
+  COBBLESTONE: 0.5
+  STONE: 0.6
+  DEEPSLATE: 0.7
+  COAL: 3
+  COPPER_INGOT: 2
+  IRON_INGOT: 10
+  GOLD_INGOT: 15
+  REDSTONE: 2
+  LAPIS_LAZULI: 3
+  QUARTZ: 2
+  EMERALD: 100
+  DIAMOND: 150
+  NETHERITE_INGOT: 1500
+  ANCIENT_DEBRIS: 800
+  OAK_LOG: 2
+  WHEAT: 1
+  CARROT: 1
+  POTATO: 1
+  BREAD: 3
+  COOKED_BEEF: 5
+  SUGAR_CANE: 1
+  BONE: 2
+  STRING: 2
+  ENDER_PEARL: 25
+  BLAZE_ROD: 20
+
+# /spawnstash: Inhalt des Koeder-Fasses (MATERIAL:Anzahl)
+stash:
+  bait:
+    - "DIAMOND:6"
+    - "ANCIENT_DEBRIS:2"
+    - "GOLD_INGOT:16"
